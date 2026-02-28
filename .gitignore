@@ -48,6 +48,7 @@ Thumbs.db
 
 # Data files
 *.csv
+!veridi_master_clean.csv
 *.xlsx
 *.zip
 *.tar.gz
