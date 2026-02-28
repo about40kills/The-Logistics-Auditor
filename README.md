@@ -7,7 +7,7 @@ This internal audit of Veridi Logistics' last-mile delivery operations analyzed 
 | Deliverable | Link / Location |
 | :--- | :--- |
 | **Data Analysis Notebook** | <https://colab.research.google.com/drive/1N0qmbi_J6Hu9OzwfXg3NIinCzC0k6SjW?usp=sharing> |
-| **Interactive Dashboard** | `app.py` (Run locally) |
+| **Interactive Dashboard** | <https://about40kills-the-logistics-auditor-app-ukhnvr.streamlit.app/> |
 | **Presentation Deck** | <https://docs.google.com/presentation/d/17Y0maQx-dBAJEhjn-_W_AB633wEBZ2KK/edit?usp=sharing&ouid=104160930435475761743&rtpof=true&sd=true> |
 
 ## C) Technical Explanation
