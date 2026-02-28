@@ -222,7 +222,7 @@ def load_data():
 df = load_data()
 
 if df is None:
-    st.error("⚠️ Dataset not found! Please run `veridi_logistics_audit.ipynb` first to generate `veridi_master_clean.csv`.")
+    st.error("⚠️ Dataset not found! Please run `veridi_logistic.ipynb` first to generate `veridi_master_clean.csv`.")
     st.stop()
 
 # --- SIDEBAR FILTERS ---
