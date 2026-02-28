@@ -6,10 +6,9 @@ This internal audit of Veridi Logistics' last-mile delivery operations analyzed 
 ## B) Project Links
 | Deliverable | Link / Location |
 | :--- | :--- |
-| **Data Analysis Notebook** | `veridi_logistics_audit.ipynb` |
+| **Data Analysis Notebook** | `https://colab.research.google.com/drive/1N0qmbi_J6Hu9OzwfXg3NIinCzC0k6SjW?usp=sharing` |
 | **Interactive Dashboard** | `app.py` (Run locally) |
-| **Presentation Deck** | `[Link Placeholder]` |
-| **Demo Video** | `[Link Placeholder]` |
+| **Presentation Deck** | `https://docs.google.com/presentation/d/17Y0maQx-dBAJEhjn-_W_AB633wEBZ2KK/edit?usp=sharing&ouid=104160930435475761743&rtpof=true&sd=true` |` |
 
 ## C) Technical Explanation
 
@@ -24,49 +23,3 @@ This internal audit of Veridi Logistics' last-mile delivery operations analyzed 
 I elected to build a monthly trend visualization comparing the percentage of late orders against the average review score over time. 
 *   **Business Value:** Logistics chains often suffer from seasonal bottlenecks (e.g., Black Friday, holidays). By mapping delay spikes to timeline events, leadership can proactively allocate overflow resources for peak months.
 *   **Metric Relationship:** Charting the average review score on a secondary axis vividly illustrates the direct, lagging impact that operational failures have on customer satisfaction.
-
-## D) Repository Structure
-```text
-The-Logistics-Auditor/
-│
-├── veridi_logistics_audit.ipynb    # Main data analysis & cleaning notebook
-├── app.py                          # Streamlit interactive dashboard
-├── requirements.txt                # Python dependencies
-├── .gitignore                      # Git ignore file for data and cache
-├── README.md                       # This documentation file
-│
-└── [Dataset CSVs]                  # *Ignored by git, must be downloaded locally*
-    ├── olist_orders_dataset.csv
-    ├── olist_order_reviews_dataset.csv
-    ├── ...
-```
-
-## E) How to Run Locally
-
-### Prerequisites
-1. Ensure you have Python 3.9+ installed.
-2. Download the [Olist Brazilian E-Commerce Dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) from Kaggle.
-3. Extract the contents into the root directory of this repository (the `.gitignore` will ensure they are not committed). You need at least:
-    * `olist_orders_dataset.csv`
-    * `olist_order_reviews_dataset.csv`
-    * `olist_customers_dataset.csv`
-    * `olist_products_dataset.csv`
-    * `olist_order_items_dataset.csv`
-    * `product_category_name_translation.csv`
-
-### Installation & Execution
-1. **Install dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-2. **Run the Notebook (Data Pipeline):**
-    Open `veridi_logistics_audit.ipynb` in Jupyter Notebook, JupyterLab, or VS Code and Run All Cells.
-    *This will merge the datasets, perform the analysis, generate PNG charts, and output the required `veridi_master_clean.csv` file.*
-
-3. **Run the Dashboard:**
-    Once the clean CSV is generated, launch the Streamlit app:
-    ```bash
-    streamlit run app.py
-    ```
-    The dashboard will open automatically in your browser at `http://localhost:8501`.
